@@ -1,0 +1,26 @@
+.ordering-checkout {
+    max-width: 800px;
+}
+
+.ordering-checkout-nav {
+    margin-bottom: space(5);
+
+    display: inline-grid;
+    column-gap: space(3);
+}
+
+.ordering-checkout-nav__item {
+    grid-row: 1;
+   
+    padding: space(2) space(5);
+    
+    text-align: center;
+    line-height: 1.5em;
+
+    border-radius: 100px;
+
+    &.active {
+        color: color('white');
+        background-color: color('black');
+    }
+}

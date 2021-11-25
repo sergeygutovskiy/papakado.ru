@@ -1,0 +1,17 @@
+.footer__content {
+    grid-template-areas: 
+        "terms terms terms terms"
+        "info social social links"
+        ;
+}
+
+.footer-social {
+    align-self: end;
+    justify-self: center;
+
+    margin-left: 0;
+}
+
+.footer-links {
+    align-self: end;
+}

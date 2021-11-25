@@ -1,0 +1,48 @@
+.menu-banners {
+    margin-bottom: space(6);
+
+    position: relative;
+    z-index: 0;
+
+    --spacing: #{ space(3) }; 
+}
+
+.menu-banners-slider {
+    position: relative;
+    left: calc( -1 * var(--spacing) / 2 );
+    
+    width: calc(100% + var(--spacing) );
+    height: 100%; 
+    
+    border-radius: 10px;
+}
+
+.menu-banner__image-wrapper {
+    --ratio: 380 / 250;
+
+    margin: 0 calc( var(--spacing) / 2 );
+    border-radius: 10px;
+}
+
+.menu-banners__btn {
+    @extend .circle-icon;
+    --icon: url('/images/icons/arrow-left.svg');
+    --icon-size: 35%;
+    --background: #{ color('grey-light-2') };
+    --background-hover: #{ color('grey-light-3') };
+
+    position: absolute;
+    top: 50%;
+
+    &_prev {
+        left: 0;
+        margin-left: calc( -1 * var(--spacing) );
+        transform: translate(-100%, -50%);
+    }
+
+    &_next {
+        right: 0;
+        margin-right: calc( -1 * var(--spacing) );
+        transform: translate(100%, -50%) rotateZ(180deg);
+    }
+}

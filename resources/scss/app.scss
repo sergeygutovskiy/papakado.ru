@@ -1,0 +1,79 @@
+@import 'swiper/css';
+
+@import './abstracts/functions';
+@import './abstracts/variables';
+
+@import './base/fonts';
+@import './base/reset';
+@import './base/root';
+
+@import './components/container/container';
+@import './components/button/button';
+@import './components/input/input';
+@import './components/list/list';
+@import './components/circle-icon/circle-icon';
+@import './components/apect-container/aspect-container';
+@import './components/skeleton-image/skeleton-image';
+@import './components/product-card/product-card';
+@import './components/product-quantity-buttons/product_quantity_buttons';
+@import './components/product-compact-card/product-compact-card';
+
+@import './layout/app/app';
+@import './layout/navigation/navigation';
+@import './layout/product-modal/product-modal';
+@import './layout/main-section/main-section';
+@import './layout/contacts/contacts';
+@import './layout/privacy/privacy';
+
+@import './layout/home/banners/banners';
+@import './layout/home/category/category';
+
+@import './layout/ordering/ordering';
+@import './layout/ordering/cart/cart';
+@import './layout/ordering/checkout/checkout';
+@import './layout/ordering/checkout/delivery/courier/courier';
+@import './layout/ordering/checkout/delivery/pickup/pickup';
+@import './layout/ordering/confirmation/confirmation';
+
+@import './layout/footer/footer';
+
+@media screen and (max-width: 1300px) {
+    @import './layout/navigation/navigation--lg';
+    @import './layout/home/category/category--lg';
+    @import './layout/ordering/cart/cart--lg';
+    @import './layout/footer/footer--lg';
+}
+
+@media screen and (max-width: 1024px) {
+    @import './components/container/container--md';
+
+    @import './layout/product-modal/product-modal--md';
+    @import './layout/ordering/ordering--md';
+    @import './layout/home/banners/banners--md';
+    @import './layout/footer/footer--md';
+    @import './layout/main-section/main-section--md';
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 600px) {
+    @import './components/container/container--ssm';
+    @import './components/product-compact-card/product-compact-card--ssm';
+    @import './components/button/button--ssm';
+    @import './components/input/input--ssm';
+    @import './components/list/list--ssm';
+
+    @import './layout/navigation/navigation--ssm';
+
+    @import './layout/ordering/ordering--ssm';
+    @import './layout/ordering/cart/cart--ssm';
+    @import './layout/ordering/checkout/checkout--ssm';
+    @import './layout/ordering/checkout/delivery/courier/courier--ssm';
+    @import './layout/ordering/checkout/delivery/pickup/pickup--ssm';
+    @import './layout/ordering/confirmation/confirmation--ssm';
+
+    @import './layout/home/category/category--ssm';
+    @import './layout/home/banners/banners--ssm';
+    @import './layout/contacts/contacts--ssm';
+}

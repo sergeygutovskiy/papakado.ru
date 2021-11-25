@@ -1,0 +1,15 @@
+.product-compact-card {
+    grid-template-columns: unset;
+    column-gap: 0;
+    padding-left: space(4);
+}
+
+.product-compact-card__image-wrapper {
+    display: none;
+}
+
+.product-compact-card__name,
+.product-compact-card__weight,
+.product-compact-card__footer {
+    grid-column: 1;
+}

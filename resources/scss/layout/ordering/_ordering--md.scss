@@ -1,0 +1,9 @@
+.ordering-header {
+    grid-template-columns: unset;
+}
+
+.ordering-nav {
+    margin-top: space(5);
+}
+
+.ordering-block:not( :first-child ) { margin-top: space(6); }

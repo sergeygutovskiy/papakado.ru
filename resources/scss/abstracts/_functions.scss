@@ -1,0 +1,25 @@
+@use 'sass:math';
+
+@function color($color) {
+    @return map-get($map: $colors, $key: $color);
+}
+
+@function font-size($size) {
+    @return var(--font-size-#{$size});
+}
+
+@function space($index) {
+    @return var(--space-#{$index});
+}
+
+@function time($index) {
+    @return map-get($map: $transition-timings, $key: $index);
+}
+
+@function calculate-font-size($font-size) {
+    @return unquote( math.div($font-size, $font-size-base) + 'rem' );
+}
+
+@function calculate-rem-value($px) {
+    @return unquote( math.div($px, $font-size-base) + 'rem' );
+}

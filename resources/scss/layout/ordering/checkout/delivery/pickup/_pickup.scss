@@ -1,0 +1,15 @@
+.ordering-checkout-delivery_pickup {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: space(3);
+
+    .input {
+        &:nth-child(1) { grid-column: span 6;  }
+        &:nth-child(2) { grid-column: span 6;  }
+        &:nth-child(3) { grid-column: span 12;  }
+    }
+}
+
+.ordering-checkout-delivery_pickup__info-text {
+    grid-column: span 12;
+}

@@ -1,0 +1,33 @@
+.navigation__content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.navigation__logo {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.navigation__links {
+    grid-column: span 2;
+    grid-row: 2;
+
+    align-self: stretch;
+    justify-self: revert;
+    margin-top: space(4);
+
+    justify-content: center;
+    margin-left: calc( -2 * #{space(2)} );
+    margin-right: calc( -2 * #{space(2)} );
+}
+
+.navigation__link {
+    margin: 0 auto;
+    padding: 0 space(2);
+    line-height: 1.75em;
+}
+
+.navigation-cart {
+    grid-column: 2;
+    grid-row: 1;
+}

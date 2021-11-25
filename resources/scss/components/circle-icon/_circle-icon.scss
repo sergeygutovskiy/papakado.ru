@@ -1,0 +1,35 @@
+.circle-icon {
+    --size: 60px;
+    --background: #{ color('orange-light') };
+    --background-hover: #{ color('orange') };
+    --icon: '';
+    --icon-size: 45%;
+
+    display: flex;
+
+    width: var(--size);
+    height: var(--size);
+
+    background-color: var(--background);
+    border-radius: 50%;
+
+    &::before {
+        content: '';
+
+        margin: auto;
+
+        width: var(--icon-size);
+        height: var(--icon-size);
+
+        background-image: var(--icon);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    transition: background-color time(3) linear;
+
+    &:hover {
+        background-color: var(--background-hover);
+    }
+}

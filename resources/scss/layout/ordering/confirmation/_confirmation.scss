@@ -1,0 +1,23 @@
+.ordering-confirmation {
+    max-width: 800px;
+}
+
+.ordering-confirmation-info {
+    --background: #{ color('grey-light-2') };
+    --color: #{ color('black') };
+
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.ordering-confirmation-products__quantity { color: color('grey'); }
+
+.ordering-confirmation-info .list__item-name { grid-column: span 4; }
+.ordering-confirmation-info .list__item-value { grid-column: span 8; text-align: left; }
+
+.ordering-confirmation-products {
+    margin-top: space(3);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.ordering-confirmation-products .list__item-name { grid-column: span 8; }
+.ordering-confirmation-products .list__item-value { grid-column: span 4; }

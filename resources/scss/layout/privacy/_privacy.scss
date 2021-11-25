@@ -1,0 +1,15 @@
+.privacy {
+    p {
+        margin: space(3) 0;
+    }
+
+    ul {
+        padding: revert;
+        list-style: revert;
+    }
+
+    a {
+        text-decoration: underline;
+        color: color('orange-light')
+    }
+}

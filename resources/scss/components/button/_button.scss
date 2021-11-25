@@ -1,0 +1,17 @@
+.button {
+    padding: space(3) space(5);
+
+    text-align: center;
+    text-transform: uppercase;
+    color: color('white');
+
+    background-color: color('orange-light');
+    border-radius: 10px;
+
+    &_transparent {
+        color: color('grey-dark');
+
+        background-color: transparent;
+        border-color: transparent;
+    }
+}

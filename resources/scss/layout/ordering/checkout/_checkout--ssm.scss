@@ -1,0 +1,14 @@
+.ordering-checkout-nav {
+    margin-bottom: space(3);
+}
+
+.ordering-checkout-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * #{ space(3) });
+}
+
+.ordering-checkout-nav__item {
+    margin-top: space(3);
+    padding: space(2) space(3);
+}

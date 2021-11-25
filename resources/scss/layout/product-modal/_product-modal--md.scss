@@ -1,0 +1,30 @@
+.product-modal {
+    overflow: auto;
+}
+
+.product-modal__content {
+    grid-template-columns: unset;
+}
+
+.product-modal__nav {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+
+    margin-left: auto;
+    padding: space(3);
+
+    background-color: color('white');
+    border-bottom-left-radius: 50%;
+}
+
+.product-modal__image-wrapper {
+    grid-row: 1;
+    grid-column: 1;
+
+    margin-bottom: space(6);
+}
+
+.product-modal__content {
+    padding: space(5) 0;
+}

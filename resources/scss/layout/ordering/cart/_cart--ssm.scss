@@ -1,0 +1,9 @@
+.ordering-cart-coupon {
+    grid-template-columns: unset;
+    input, button { grid-row: unset; }
+}
+
+.ordering-cart-coupon__message {
+    grid-column: span 1;
+    grid-row: 4;
+}

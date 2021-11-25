@@ -1,0 +1,11 @@
+:root {
+    @each $name, $value in $font-sizes {
+        --font-size-#{$name}: #{ $value };
+    }
+
+    @each $index, $value in $spacing {
+        --space-#{$index}: #{ $value };
+    }
+
+    --container-padding-h: #{ $container-padding-h };
+}

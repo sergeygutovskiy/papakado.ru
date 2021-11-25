@@ -1,0 +1,29 @@
+.list {
+    display: grid;
+    row-gap: space(3);
+    padding: space(4) space(5);
+
+    --color: #{ color('white') };
+    --background: #{ color('black') };
+
+    color: var(--color);
+    background-color: var(--background);
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.list__item-name { grid-column: 1; }
+.list__item-value { grid-column: 2; text-align: right; }
+
+.list__item-name,
+.list__item-value {
+    &_extra_margin {
+        margin-top: space(2);
+    }
+    
+    &_big {
+        @extend .list__item-name_extra_margin;
+        font-size: font-size('big-1');
+    }
+}

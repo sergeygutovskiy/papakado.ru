@@ -1,0 +1,13 @@
+.contacts-list {
+    --background: #{ color('grey-light-2') };
+    --color: #{ color('black') };
+
+    max-width: 800px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.contacts-list .list__item-name { grid-column: span 5; }
+.contacts-list .list__item-value { 
+    grid-column: span 7; 
+    text-align: left;
+}

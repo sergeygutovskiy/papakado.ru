@@ -1,0 +1,32 @@
+.skeleton-image-wrapper {
+    @extend %aspect-container;
+    background-color: color('grey-light-2');
+
+    &:not( .loaded ):before {
+        content: '';
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        height: 100%;
+        width: 100%;
+
+        background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%);
+        animation: load 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+    
+        @keyframes load {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(100%); }
+        }
+    }
+}
+
+.skeleton-image {
+    @extend %aspect-container__image;
+    opacity: 0;
+}
+
+.skeleton-image-wrapper.loaded .skeleton-image { 
+    opacity: 1; 
+}

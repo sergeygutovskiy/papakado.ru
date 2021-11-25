@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input,
+textarea,
+button {
+    font-family: Atyp;
+    font-size: 100%;
+
+    background-color: transparent;
+    border: none;
+}
+
+button:not( :disabled ) {
+    cursor: pointer;
+}
+
+a, button, input, textarea {
+    &:disabled,
+    &[disabled="true"] {
+        pointer-events: none;
+        user-select: none;
+        opacity: 0.6;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+html {
+    height: 100vh;
+    font-size: font-size('base');
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: Atyp;
+    color: color('black');
+
+    // &.locked {
+    //     overflow: hidden;
+    // }
+}

@@ -1,0 +1,41 @@
+.footer {
+    margin-top: space(7);
+}
+
+.footer__content {
+    grid-template-areas: 
+        "terms terms"
+        "social social"
+        "info info"
+        "links links"
+        ;
+
+    row-gap: 2em;
+}
+
+.footer-terms {
+    grid-template-columns: unset;
+}
+
+.footer-terms__title {
+    grid-row: unset;
+    margin-bottom: space(2);
+}
+
+.footer-terms__description:not( :last-child ) {
+    margin-bottom: space(3);
+}
+
+.footer-social {
+    justify-self: start;
+}
+
+.footer-company-info,
+.footer-links {
+    margin-top: 0;
+}
+
+.footer-links {
+    justify-content: start;
+    justify-self: start;
+}

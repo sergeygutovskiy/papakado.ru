@@ -1,0 +1,12 @@
+.input {
+    padding: space(3) space(4);
+
+    border: solid 1px color('grey-light-1');
+    border-radius: 10px;
+
+    transition: border-color time(3) linear;
+
+    &:focus {
+        border-color: color('black');
+    }
+}

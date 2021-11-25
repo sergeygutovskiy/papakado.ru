@@ -1,0 +1,11 @@
+.list {
+    padding: space(4) space(3);
+    font-size: font-size('small');
+}
+
+.list__item-name,
+.list__item-value {
+    &_big {
+        font-size: font-size('base');
+    }
+}

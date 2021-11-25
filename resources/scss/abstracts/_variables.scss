@@ -1,0 +1,54 @@
+$colors: (
+    'black': #141A1F,
+    'white': #ffffff,
+    
+    'grey': #8D8D8D,
+    'grey-dark': #6B6D6E,
+    'grey-light-1': #97999A,
+    'grey-light-2': #F9F9FC,
+    'grey-light-3': #EAEAEA,
+
+    'orange': #EF3929,
+    'orange-light': #FF614E,
+);
+
+$font-size-base: 18;
+
+:root {
+    font-weight: lighter;
+}
+
+$font-sizes: (
+    'title-1': #{ calculate-font-size(35) },
+    'title-2': #{ calculate-font-size(30) },
+
+    'big-1': #{ calculate-font-size(24) },
+    'big-2': #{ calculate-font-size(20) },
+
+    'base': 1.125rem, // 18px
+
+    'small': #{ calculate-font-size(14) },
+);
+
+$spacing: (
+    0: 0,
+    1: #{ calculate-rem-value(6)   },
+    2: #{ calculate-rem-value(12)  },
+    3: #{ calculate-rem-value(18)  },
+    4: #{ calculate-rem-value(24)  },
+    5: #{ calculate-rem-value(32)  },
+    6: #{ calculate-rem-value(64)  },
+    7: #{ calculate-rem-value(90)  },
+    8: #{ calculate-rem-value(126) }
+);
+
+$transition-timings: (
+    3: 150ms,
+    4: 300ms,
+    5: 500ms
+);
+
+$container-padding-h: calculate-rem-value(128);
+$container-padding-h--md: calculate-rem-value(64);
+$container-padding-h--ssm: space(3);
+$container-max-width: 1184px;

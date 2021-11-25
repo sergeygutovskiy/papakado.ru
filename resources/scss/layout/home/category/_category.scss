@@ -1,0 +1,17 @@
+.menu-category__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: space(5);
+}
+
+.menu-category__name {
+    font-size: font-size('title-2');
+}
+
+.menu-category__products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: space(3);
+}
